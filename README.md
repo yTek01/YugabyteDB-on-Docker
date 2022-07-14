@@ -1,7 +1,7 @@
 # Yugabyte Cluster Database Deployment using Docker Compose file
 This is a repository that shows you how to set up your Yugabyte Database using Docker Compose file.
 
-![alt text](https://github.com/yTek01/YugabyteDB-on-Docker/YugabyteDB.png)
+![alt text](https://github.com/yTek01/YugabyteDB-on-Docker/blob/main/YugabyteDB.png)
 
 1. Clone the Github repo with the docker-compose file.
 ```bash
@@ -37,7 +37,6 @@ CREATE TABLE Cassandrakeyspace.foo(bar INT PRIMARY KEY); \
 DESCRIBE Cassandrakeyspace.foo;
 ```
 
-
 7. Copy and load the sample data into YugabyteDB
 docker cp load_data.sql yb-tserver-n1:/home/yugabyte/
 
@@ -61,7 +60,6 @@ docker exec -it yb-tserver-n1 /home/yugabyte/bin/ysqlsh -h yb-tserver-n1 -U post
 ```bash
 \dt
 ```
-
 
 * Check the actors table.
 ```bash
